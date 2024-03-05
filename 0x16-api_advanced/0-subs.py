@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """queries the ddit API and returns the number of subscribers
-(not active users, total subscribers) for a given subreddit
+(not active users, total ubscribers) for a given subreddit
 """
 import requests
 
@@ -17,4 +17,3 @@ def number_of_subscribers(subreddit):
     json = r.json()
     data_dict = json.get('data')
     return(data_dict.get('subscribers'))
-
